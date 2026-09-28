@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="menuestilo2.css">
+
+    <!-- ICONOS FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Aruma | Belleza y Cosmética</title>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BOTÓN HAMBURGUESA
+===================================================== -->
+
+<button
+    class="hamburger"
+    type="button"
+    onclick="mostrarMenu()"
+    aria-label="Abrir menú">
+
+    ☰
+
+</button>
+
+
+<!-- =====================================================
+     MENÚ HAMBURGUESA
+===================================================== -->
+
+<div class="menu" id="menu">
+
+    <a href="menu2.html">
+        <i class="fa-solid fa-house"></i>
+        Inicio
+    </a>
+
+    <a href="somos.html">
+        <i class="fa-solid fa-users"></i>
+        Somos
+    </a>
+
+    <a href="producto.html">
+        <i class="fa-solid fa-spray-can-sparkles"></i>
+        Producto
+    </a>
+
+    <a href="contacto.html">
+        <i class="fa-solid fa-envelope"></i>
+        Contacto
+    </a>
+
+    <a href="index. (2).html">
+        <i class="fa-solid fa-file-lines"></i>
+        Formulario
+    </a>
+
+</div>
+
+
+<!-- =====================================================
+     BARRA DE NAVEGACIÓN
+===================================================== -->
+
+<nav>
+
+    <a href="menu2.html">
+
+        <img
+            src="https://images.teamtailor-cdn.com/images/s3/teamtailor-na-maroon/logotype-v3/image_uploads/a67b42d5-8dd8-434e-a010-a06df06e7201/original.png"
+            alt="Logo Aruma">
+
+    </a>
+
+
+    <div class="enlaces">
+
+        <a href="menu2.html">
+            Inicio
+        </a>
+
+        <a href="somos.html">
+            Somos
+        </a>
+
+        <a href="producto.html">
+            Producto
+        </a>
+
+        <a href="contacto.html">
+            Contacto
+        </a>
+
+        <a href="index. (2).html">
+            Formulario
+        </a>
+
+    </div>
+
+
+    <button type="button">
+
+        <i class="fa-solid fa-user"></i>
+
+        Ingreso
+
+    </button>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="hero">
+
+    <a href="producto.html" class="cta-button">
+
+        <i class="fa-solid fa-bag-shopping"></i>
+
+        Compra ahora
+
+    </a>
+
+</section>
+
+
+<!-- =====================================================
+     CARRUSEL
+===================================================== -->
+
+<section class="carrusel">
+
+    <div class="carrusel-contenedor">
+
+
+        <!-- IMAGEN 1 -->
+
+        <div class="slide activo">
+
+            <img
+                src="https://aruma.vtexassets.com/assets/vtex.file-manager-graphql/images/f29b68ab-b703-4dd9-8cf7-d731021f635e___39d93e8b5c6d174808290cd779738b1c.png"
+                alt="Banner de belleza Aruma">
+
+        </div>
+
+
+        <!-- IMAGEN 2 -->
+
+        <div class="slide">
+
+            <img
+                src="https://aruma.vtexassets.com/assets/vtex.file-manager-graphql/images/ce5a9581-6d7b-4b29-925f-d07bf8a05043___93e0736842583116b9f55739eec9fdba.png"
+                alt="Productos de belleza Aruma">
+
+        </div>
+
+        <!-- BOTÓN ANTERIOR -->
+
+        <button
+            class="carrusel-btn anterior"
+            type="button"
+            onclick="cambiarSlide(-1)"
+            aria-label="Imagen anterior">
+
+            ❮
+
+        </button>
+
+
+        <!-- BOTÓN SIGUIENTE -->
+
+        <button
+            class="carrusel-btn siguiente"
+            type="button"
+            onclick="cambiarSlide(1)"
+            aria-label="Imagen siguiente">
+
+            ❯
+
+        </button>
+
+    </div>
+
+
+    <!-- INDICADORES -->
+
+    <div class="indicadores">
+
+        <span
+            class="punto activo-punto"
+            onclick="irSlide(0)">
+        </span>
+
+        <span
+            class="punto"
+            onclick="irSlide(1)">
+        </span>
+
+        <span
+            class="punto"
+            onclick="irSlide(2)">
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CATEGORÍAS
+===================================================== -->
+
+<section class="categorias">
+
+    <h2>Descubre tu estilo</h2>
+
+    <p>
+        Encuentra tus productos favoritos de belleza
+    </p>
+
+
+    <div class="categorias-container">
+
+
+        <!-- LABIOS -->
+
+        <a href="producto.html" class="categoria">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <span>
+                Labios
+            </span>
+
+        </a>
+
+
+        <!-- ROSTRO -->
+
+        <a href="producto.html" class="categoria">
+
+            <i class="fa-solid fa-face-smile"></i>
+
+            <span>
+                Rostro
+            </span>
+
+        </a>
+
+
+        <!-- MAQUILLAJE -->
+
+        <a href="producto.html" class="categoria">
+
+            <i class="fa-solid fa-spray-can-sparkles"></i>
+
+            <span>
+                Maquillaje
+            </span>
+
+        </a>
+
+
+        <!-- SKINCARE -->
+
+        <a href="producto.html" class="categoria">
+
+            <i class="fa-solid fa-droplet"></i>
+
+            <span>
+                Skincare
+            </span>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PRODUCTOS
+===================================================== -->
+
+<section class="productos" id="productos">
+
+
+    <!-- PRODUCTO 1 -->
+
+    <div class="zapatilla" id="labial-1">
+
+        <img
+            src="https://aruma.vtexassets.com/arquivos/ids/208722-1200-auto?v=638863783793800000&width=1200&height=auto&aspect=true"
+            alt="Labial Líquido Mate">
+
+        <div class="zapatilla-text">
+
+            <h2>
+                Labial Líquido Mate
+            </h2>
+
+            <p class="precio">
+                S/ 39.90
+            </p>
+
+            <a href="producto.html">
+                Ver producto →
+            </a>
+
+            <button class="carrito-btn" type="button">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al carrito
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO 2 -->
+
+    <div class="zapatilla" id="labial-2">
+
+        <img
+            src="https://aruma.vtexassets.com/arquivos/ids/214852-1200-auto?v=638960465574500000&width=1200&height=auto&aspect=true"
+            alt="Labial Matte Intense">
+
+        <div class="zapatilla-text">
+
+            <h2>
+                Labial Matte Intense
+            </h2>
+
+            <p class="precio">
+                S/ 42.90
+            </p>
+
+            <a href="producto.html">
+                Ver producto →
+            </a>
+
+            <button class="carrito-btn" type="button">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al carrito
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO 3 -->
+
+    <div class="zapatilla" id="labial-3">
+
+        <img
+            src="https://aruma.vtexassets.com/arquivos/ids/220234-1200-auto?v=639069299161800000&width=1200&height=auto&aspect=true"
+            alt="Labial Velvet Rosa">
+
+        <div class="zapatilla-text">
+
+            <h2>
+                Labial Velvet Rosa
+            </h2>
+
+            <p class="precio">
+                S/ 45.90
+            </p>
+
+            <a href="producto.html">
+                Ver producto →
+            </a>
+
+            <button class="carrito-btn" type="button">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al carrito
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO 4 -->
+
+    <div class="zapatilla" id="labial-4">
+
+        <img
+            src="https://aruma.vtexassets.com/arquivos/ids/199509-1200-auto?v=638622320471630000&width=1200&height=auto&aspect=true"
+            alt="Labial Creamy Nude">
+
+        <div class="zapatilla-text">
+
+            <h2>
+                Labial Creamy Nude
+            </h2>
+
+            <p class="precio">
+                S/ 37.90
+            </p>
+
+            <a href="producto.html">
+                Ver producto →
+            </a>
+
+            <button class="carrito-btn" type="button">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al carrito
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO 5 -->
+
+    <div class="zapatilla" id="labial-5">
+
+        <img
+            src="https://aruma.vtexassets.com/arquivos/ids/220468-1200-auto?v=639071113406400000&width=1200&height=auto&aspect=true"
+            alt="Labial Color Trend">
+
+        <div class="zapatilla-text">
+
+            <h2>
+                Labial Color Trend
+            </h2>
+
+            <p class="precio">
+                S/ 35.90
+            </p>
+
+            <a href="producto.html">
+                Ver producto →
+            </a>
+
+            <button class="carrito-btn" type="button">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al carrito
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO 6 -->
+
+    <div class="zapatilla" id="labial-6">
+
+        <img
+            src="https://aruma.vtexassets.com/arquivos/ids/180035-1200-auto?v=638018879841870000&width=1200&height=auto&aspect=true"
+            alt="Lip Gloss">
+
+        <div class="zapatilla-text">
+
+            <h2>
+                Lip Gloss
+            </h2>
+
+            <p class="precio">
+                S/ 29.90
+            </p>
+
+            <a href="producto.html">
+                Ver producto →
+            </a>
+
+            <button class="carrito-btn" type="button">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al carrito
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO 7 -->
+
+    <div class="zapatilla" id="producto-7">
+
+        <img
+            src="https://aruma.vtexassets.com/arquivos/ids/225035-1200-auto?v=639240539609470000&width=1200&height=auto&aspect=true"
+            alt="MEDICUBE">
+
+        <div class="zapatilla-text">
+
+            <h2>
+                MEDICUBE
+            </h2>
+
+            <p class="precio">
+                S/ 89.90
+            </p>
+
+            <a href="producto.html">
+                Ver producto →
+            </a>
+
+            <button class="carrito-btn" type="button">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al carrito
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO 8 -->
+
+    <div class="zapatilla" id="producto-8">
+
+        <img
+            src="https://aruma.vtexassets.com/arquivos/ids/226335-1200-auto?v=639243962780200000&width=1200&height=auto&aspect=true"
+            alt="Gloss Essence">
+
+        <div class="zapatilla-text">
+
+            <h2>
+                Gloss Essence
+            </h2>
+
+            <p class="precio">
+                S/ 32.90
+            </p>
+
+            <a href="producto.html">
+                Ver producto →
+            </a>
+
+            <button class="carrito-btn" type="button">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al carrito
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO 9 -->
+
+    <div class="zapatilla" id="producto-9">
+
+        <img
+            src="https://aruma.vtexassets.com/arquivos/ids/211176-1200-auto?v=638906289143470000&width=1200&height=auto&aspect=true"
+            alt="Rubor Petrizzio Hello Kitty">
+
+        <div class="zapatilla-text">
+
+            <h2>
+                Rubor Petrizzio Hello Kitty
+            </h2>
+
+            <p class="precio">
+                S/ 49.90
+            </p>
+
+            <a href="producto.html">
+                Ver producto →
+            </a>
+
+            <button class="carrito-btn" type="button">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al carrito
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BENEFICIOS
+===================================================== -->
+
+<section class="beneficios">
+
+    <div class="beneficio">
+
+        <i class="fa-solid fa-truck-fast"></i>
+
+        <h3>Envíos rápidos</h3>
+
+        <p>
+            Recibe tus productos de forma segura.
+        </p>
+
+    </div>
+
+
+    <div class="beneficio">
+
+        <i class="fa-solid fa-credit-card"></i>
+
+        <h3>Pago seguro</h3>
+
+        <p>
+            Compra de manera rápida y segura.
+        </p>
+
+    </div>
+
+
+    <div class="beneficio">
+
+        <i class="fa-solid fa-heart"></i>
+
+        <h3>Productos favoritos</h3>
+
+        <p>
+            Encuentra tus productos de belleza.
+        </p>
+
+    </div>
+
+
+    <div class="beneficio">
+
+        <i class="fa-solid fa-headset"></i>
+
+        <h3>Atención</h3>
+
+        <p>
+            Estamos aquí para ayudarte.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <h3>ARUMA</h3>
+
+            <a href="somos.html">
+                Nosotros
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+            <a href="#">
+                Preguntas frecuentes
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>AYUDA</h3>
+
+            <a href="#">
+                Envíos
+            </a>
+
+            <a href="#">
+                Cambios y devoluciones
+            </a>
+
+            <a href="#">
+                Términos y condiciones
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>SÍGUENOS</h3>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                Facebook
+            </a>
+
+            <a href="#">
+                TikTok
+            </a>
+
+            <a href="#">
+                WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- REDES -->
+
+    <div class="social-grid-container">
+
+        <a href="#"
+           class="social-icon"
+           aria-label="WhatsApp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+        </a>
+
+        <a href="#"
+           class="social-icon"
+           aria-label="Facebook">
+
+            <i class="fa-brands fa-facebook-f"></i>
+
+        </a>
+
+        <a href="#"
+           class="social-icon"
+           aria-label="Instagram">
+
+            <i class="fa-brands fa-instagram"></i>
+
+        </a>
+
+        <a href="#"
+           class="social-icon"
+           aria-label="TikTok">
+
+            <i class="fa-brands fa-tiktok"></i>
+
+        </a>
+
+    </div>
+
+
+    <div class="derechos">
+
+        © 2026 Aruma. Todos los derechos reservados.
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   MENÚ
+===================================================== */
+
+function mostrarMenu() {
+
+    const menu = document.getElementById("menu");
+
+    if (menu.style.display === "block") {
+
+        menu.style.display = "none";
+
+    } else {
+
+        menu.style.display = "block";
+
+    }
+
+}
+
+
+/* =====================================================
+   CARRUSEL
+===================================================== */
+
+let slideActual = 0;
+
+const slides = document.querySelectorAll(".slide");
+
+const puntos = document.querySelectorAll(".punto");
+
+
+function mostrarSlide(numero) {
+
+    slides.forEach(function(slide) {
+
+        slide.classList.remove("activo");
+
+    });
+
+
+    puntos.forEach(function(punto) {
+
+        punto.classList.remove("activo-punto");
+
+    });
+
+
+    slides[numero].classList.add("activo");
+
+    puntos[numero].classList.add("activo-punto");
+
+}
+
+
+function cambiarSlide(direccion) {
+
+    slideActual = slideActual + direccion;
+
+
+    if (slideActual >= slides.length) {
+
+        slideActual = 0;
+
+    }
+
+
+    if (slideActual < 0) {
+
+        slideActual = slides.length - 1;
+
+    }
+
+
+    mostrarSlide(slideActual);
+
+}
+
+
+function irSlide(numero) {
+
+    slideActual = numero;
+
+    mostrarSlide(slideActual);
+
+}
+
+
+/* CAMBIO AUTOMÁTICO */
+
+setInterval(function() {
+
+    cambiarSlide(1);
+
+}, 4000);
+
+
+</script>
+
+
+</body>
+
+</html>
