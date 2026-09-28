@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CONEXIÓN CON EL CSS -->
+    <link rel="stylesheet" href="estiloformularioaruma.css">
+
+    <title>Formulario - Aruma</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- TÍTULO -->
+
+    <h1>Formulario Aruma</h1>
+
+    <p>
+        Completa tus datos y cuéntanos sobre tus preferencias.
+    </p>
+
+
+
+    <!-- FORMULARIO -->
+
+    <form action="proceso.php" method="post" enctype="multipart/form-data">
+
+
+        <!-- =========================
+        DATOS PERSONALES
+        ========================= -->
+
+        <fieldset>
+
+            <legend>DATOS PERSONALES</legend>
+
+
+            <label for="nombre">
+                Nombre completo
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ej. Juan Pérez"
+                required>
+
+            <br><br>
+
+
+            <label for="mail">
+                Correo electrónico
+            </label>
+
+            <input
+                type="email"
+                id="mail"
+                name="mail"
+                placeholder="correo@ejemplo.com"
+                required>
+
+            <br><br>
+
+
+            <label for="telefono">
+                Teléfono
+            </label>
+
+            <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="999 999 999">
+
+            <br><br>
+
+
+            <label for="edad">
+                Edad
+            </label>
+
+            <input
+                type="number"
+                id="edad"
+                name="edad"
+                min="18"
+                max="100">
+
+            <br><br>
+
+
+            <label for="web">
+                Sitio web
+            </label>
+
+            <input
+                type="url"
+                id="web"
+                name="web"
+                placeholder="https://ejemplo.com">
+
+        </fieldset>
+
+
+        <br>
+
+
+
+        <!-- =========================
+        PREFERENCIAS
+        ========================= -->
+
+        <fieldset>
+
+            <legend>TUS PREFERENCIAS</legend>
+
+
+            <p>Género</p>
+
+
+            <input
+                type="radio"
+                id="femenino"
+                name="genero"
+                value="femenino">
+
+            <label for="femenino">
+                Femenino
+            </label>
+
+            <br>
+
+
+            <input
+                type="radio"
+                id="masculino"
+                name="genero"
+                value="masculino">
+
+            <label for="masculino">
+                Masculino
+            </label>
+
+            <br>
+
+
+            <input
+                type="radio"
+                id="otro"
+                name="genero"
+                value="otro">
+
+            <label for="otro">
+                Otro
+            </label>
+
+            <br><br>
+
+
+
+            <p>
+                ¿Qué productos te interesan?
+            </p>
+
+
+            <input
+                type="checkbox"
+                id="labiales"
+                name="intereses[]"
+                value="labiales">
+
+            <label for="labiales">
+                Labiales
+            </label>
+
+            <br>
+
+
+            <input
+                type="checkbox"
+                id="maquillaje"
+                name="intereses[]"
+                value="maquillaje">
+
+            <label for="maquillaje">
+                Maquillaje
+            </label>
+
+            <br>
+
+
+            <input
+                type="checkbox"
+                id="skincare"
+                name="intereses[]"
+                value="skincare">
+
+            <label for="skincare">
+                Skincare
+            </label>
+
+            <br>
+
+
+            <input
+                type="checkbox"
+                id="perfumes"
+                name="intereses[]"
+                value="perfumes">
+
+            <label for="perfumes">
+                Perfumes
+            </label>
+
+            <br>
+
+
+            <input
+                type="checkbox"
+                id="cabello"
+                name="intereses[]"
+                value="cabello">
+
+            <label for="cabello">
+                Cuidado del cabello
+            </label>
+
+            <br>
+
+
+            <input
+                type="checkbox"
+                id="accesorios"
+                name="intereses[]"
+                value="accesorios">
+
+            <label for="accesorios">
+                Accesorios
+            </label>
+
+            <br><br>
+
+
+
+            <!-- PAÍS -->
+
+            <label for="pais">
+                País
+            </label>
+
+            <select id="pais" name="pais">
+
+                <option value="">
+                    Selecciona tu país
+                </option>
+
+                <option value="peru">
+                    Perú
+                </option>
+
+                <option value="chile">
+                    Chile
+                </option>
+
+                <option value="colombia">
+                    Colombia
+                </option>
+
+                <option value="argentina">
+                    Argentina
+                </option>
+
+                <option value="ecuador">
+                    Ecuador
+                </option>
+
+            </select>
+
+        </fieldset>
+
+
+        <br>
+
+
+
+        <!-- =========================
+        PRODUCTO FAVORITO
+        ========================= -->
+
+        <fieldset>
+
+            <legend>PRODUCTO FAVORITO</legend>
+
+
+            <label for="producto">
+                Producto que buscas
+            </label>
+
+
+            <input
+                type="text"
+                list="lista-productos"
+                id="producto"
+                name="producto"
+                placeholder="Escribe o selecciona">
+
+
+            <datalist id="lista-productos">
+
+                <option value="Labial Líquido Mate">
+
+                <option value="Labial Matte Intense">
+
+                <option value="Labial Velvet Rosa">
+
+                <option value="Labial Creamy Nude">
+
+                <option value="Labial Color Trend">
+
+                <option value="Lip Gloss">
+
+            </datalist>
+
+
+            <br><br>
+
+
+
+            <!-- COLOR -->
+
+            <label for="color">
+                Color favorito
+            </label>
+
+            <input
+                type="color"
+                id="color"
+                name="color"
+                value="#F00094">
+
+            <br><br>
+
+
+
+            <!-- RANGO -->
+
+            <label for="satisfaccion">
+
+                ¿Qué tan importante es para ti encontrar
+                nuevos productos de belleza?
+
+            </label>
+
+            <br>
+
+            <input
+                type="range"
+                id="satisfaccion"
+                name="satisfaccion"
+                min="1"
+                max="10"
+                value="5">
+
+        </fieldset>
+
+
+        <br>
+
+
+
+        <!-- =========================
+        FECHA Y HORA
+        ========================= -->
+
+        <fieldset>
+
+            <legend>FECHA Y HORA</legend>
+
+
+            <label for="fecha">
+                Fecha de nacimiento
+            </label>
+
+            <input
+                type="date"
+                id="fecha"
+                name="fecha">
+
+            <br><br>
+
+
+            <label for="hora">
+                Hora de contacto preferida
+            </label>
+
+            <input
+                type="time"
+                id="hora"
+                name="hora">
+
+        </fieldset>
+
+
+        <br>
+
+
+
+        <!-- =========================
+        ARCHIVOS
+        ========================= -->
+
+        <fieldset>
+
+            <legend>ARCHIVOS</legend>
+
+
+            <label for="archivo">
+                Subir archivo
+            </label>
+
+            <input
+                type="file"
+                id="archivo"
+                name="archivo">
+
+        </fieldset>
+
+
+        <br>
+
+
+
+        <!-- =========================
+        COMENTARIOS
+        ========================= -->
+
+        <fieldset>
+
+            <legend>COMENTARIOS</legend>
+
+
+            <label for="comentarios">
+                Cuéntanos qué necesitas
+            </label>
+
+            <br>
+
+
+            <textarea
+                id="comentarios"
+                name="comentarios"
+                rows="6"
+                cols="60"
+                placeholder="Escribe aquí tu comentario..."></textarea>
+
+
+            <br><br>
+
+
+            <!-- TÉRMINOS -->
+
+            <input
+                type="checkbox"
+                id="terminos"
+                name="terminos"
+                required>
+
+            <label for="terminos">
+                Acepto los términos y condiciones.
+            </label>
+
+        </fieldset>
+
+
+        <br>
+
+
+
+        <!-- =========================
+        BOTONES
+        ========================= -->
+
+        <input
+            type="reset"
+            value="Limpiar formulario">
+
+
+        <input
+            type="submit"
+            value="Enviar formulario">
+
+
+    </form>
+
+
+</body>
+
+</html>
